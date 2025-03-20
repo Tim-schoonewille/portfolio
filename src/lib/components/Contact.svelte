@@ -7,7 +7,7 @@
     message: "",
   });
 
-  const showTag = false;
+  const showTag = true;
 
   let isSubmitting = $state(false);
   let formSubmitted = $state(false);
@@ -18,7 +18,6 @@
     isSubmitting = true;
 
     try {
-      // Simulate form submission
       await new Promise((resolve) => setTimeout(resolve, 1000));
       console.log("Form submitted:", formData);
       formSubmitted = true;

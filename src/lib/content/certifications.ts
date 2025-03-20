@@ -2,13 +2,13 @@ import type { Cert } from "$lib/types";
 
 export const certifications: Cert[] = [
   {
-    title: "Java OCP 17",
+    title: "Java SE 17 Developer 1Z0-829",
     issuer: "Oracle",
     date: "2024",
     image: "/ocp17_badge.jpg",
   },
   {
-    title: "PSDI",
+    title: "Professional Scrum Developer I",
     issuer: "Scrum",
     date: "2024",
     image:

@@ -3,7 +3,7 @@
 
   import { skills } from "$lib/content/skills";
 
-  const showTag = false;
+  const showTag = true;
 </script>
 
 <section id="skills" class="w-full py-12 md:py-16 lg:py-20 bg-blue-50">
@@ -14,9 +14,9 @@
       <div class="space-y-2">
         {#if showTag}
           <span
-            class="inline-flex items-center rounded-full border border-blue-200 px-3 py-1 text-sm font-medium bg-blue-100 text-blue-800"
+            class=" inline-flex items-center rounded-full border border-blue-200 px-3 py-1 text-sm font-medium bg-blue-100 text-blue-800"
           >
-            My Skills
+            Mijn Skills
           </span>
         {/if}
         <h2
@@ -25,7 +25,7 @@
           Technische Expertise
         </h2>
         <p
-          class="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed "
+          class="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed"
         >
           Ik heb gewerkt met diverse technologieën en frameworks.
         </p>
@@ -65,7 +65,7 @@
               </div>
               <h3 class="text-xl font-bold">{category.title}</h3>
             </div>
-            <ul class="space-y-2">
+            <ul class="space-y-2 list-[square] list">
               {#each category.skills as skill}
                 <li class="flex items-center gap-2">
                   <div

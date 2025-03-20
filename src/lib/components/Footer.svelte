@@ -12,6 +12,7 @@
     <div class="flex items-center gap-4">
       <a
         href="https://www.github.com/Tim-schoonewille"
+        target="_blank"
         aria-label="Github"
         class="text-gray-500 hover:text-primary-600"
       >
@@ -34,7 +35,8 @@
         </svg>
       </a>
       <a
-        href="https://www.github.com/Tim-schoonewille"
+        href="https://www.linkedin.com/in/tim-schoonewille"
+        target="_blank"
         aria-label="LinkedIn"
         class="text-gray-500 hover:text-primary-600"
       >
@@ -58,7 +60,8 @@
         </svg>
       </a>
       <a
-        href="http://localhost:5173/#"
+        href="mailto:tim.schoonewille@gmail.com"
+        target="_blank"
         aria-label="Email"
         class="text-gray-500 hover:text-primary-600"
       >

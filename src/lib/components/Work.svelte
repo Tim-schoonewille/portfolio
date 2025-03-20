@@ -13,7 +13,7 @@
         <span
           class="inline-flex items-center rounded-full border border-blue-200 px-3 py-1 text-sm font-medium bg-blue-100 text-blue-800"
         >
-          My Work
+          Mijn Werk
         </span>
         <h2
           class="text-3xl font-bold tracking-tighter sm:text-5xl bg-gradient-text bg-gradient-to-r from-primary-600 via-secondary-500 to-primary-600"
@@ -94,7 +94,7 @@
         </div>
       {/each}
     </div>
-    <div class="flex justify-center mt-8">
+    <!-- <div class="flex justify-center mt-8">
       <a
         href="/projects"
         class="inline-flex items-center justify-center rounded-md border border-gray-200 bg-white px-4 py-2 text-sm font-medium text-gray-900 hover:bg-gray-50 hover:text-primary-600 hover:border-primary-600 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2"
@@ -118,6 +118,6 @@
           <line x1="10" x2="21" y1="14" y2="3"></line>
         </svg>
       </a>
-    </div>
+    </div> -->
   </div>
 </section>

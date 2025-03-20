@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { goto } from "$app/navigation";
   import { projects } from "$lib/content/projetcs";
 
 </script>
@@ -32,16 +33,17 @@
             {project.title}
           </h3>
           <p class="text-sm text-gray-500 mb-4">{project.description}</p>
-          <!-- <div class="flex flex-wrap gap-2 mb-4">
-            {#each project.technologies as tech}
+          <div class="flex flex-wrap gap-2 mb-4">
+            {#each project.tags as tech}
               <span
                 class="inline-flex items-center rounded-full bg-blue-100/50 px-2 py-0.5 text-xs font-medium text-blue-800"
                 >{tech}</span
               >
             {/each}
-          </div> -->
+          </div>
           <a
             href={`/projects/${project.slug}`}
+            onclick={()=> goto(`/projects/${project.slug}`)}
             class="inline-flex w-full items-center justify-center rounded-md border border-gray-200 bg-white px-4 py-2 text-sm font-medium text-gray-900 hover:bg-gray-50 hover:text-primary-600 hover:border-primary-600 group-hover:border-primary-600 group-hover:text-primary-600 transition-colors duration-300"
           >
             View Details

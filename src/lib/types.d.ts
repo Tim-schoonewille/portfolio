@@ -30,7 +30,19 @@ export type Project = {
 export type TechStack = {
   name: string;
   category: string;
-  icon: string;
+  icon:
+    | "compass"
+    | "calendar"
+    | "align-center"
+    | "dollar-sign"
+    | "folder-output"
+    | "palette"
+    | "github"
+    | "external-link"
+    | "backend"
+    | "node"
+    | "frontend-framework"
+    | "default";
 };
 
 export type ProjectLink = {

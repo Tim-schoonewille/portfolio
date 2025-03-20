@@ -1,4 +1,6 @@
 <script lang="ts">
+  import { goto } from "$app/navigation";
+
   interface Props {
     activeSection: string;
   }
@@ -17,6 +19,7 @@
   <div class="container mx-auto flex h-16 items-center justify-between px-4">
     <a
       href="/"
+      onclick={() => (mobileMenuOpen = false)}
       class="flex items-center gap-2 font-bold text-xl text-primary-700"
     >
       <svg
@@ -40,16 +43,16 @@
       <a href="/#about" class="text-sm font-medium relative group nav-link">
         <span
           class="transition-colors duration-300 group-hover:text-primary-600"
-          >About</span
+          >Over</span
         >
         <span
           class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary-600 transition-all duration-300 group-hover:w-full"
         ></span>
       </a>
-      <a href="#skills" class="text-sm font-medium relative group nav-link">
+      <a href="/#skills" class="text-sm font-medium relative group nav-link">
         <span
           class="transition-colors duration-300 group-hover:text-primary-600"
-          >Skills</span
+          >Expertise</span
         >
         <span
           class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary-600 transition-all duration-300 group-hover:w-full"
@@ -61,7 +64,7 @@
       >
         <span
           class="transition-colors duration-300 group-hover:text-primary-600"
-          >Certifications</span
+          >Certificaten</span
         >
         <span
           class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary-600 transition-all duration-300 group-hover:w-full"
@@ -70,7 +73,7 @@
       <a href="/#work" class="text-sm font-medium relative group nav-link">
         <span
           class="transition-colors duration-300 group-hover:text-primary-600"
-          >Work</span
+          >Projecten</span
         >
         <span
           class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary-600 transition-all duration-300 group-hover:w-full"
@@ -88,7 +91,8 @@
     </nav>
     <div class="flex items-center gap-2">
       <a
-        href="#"
+        href="https://www.github.com/Tim-schoonewille"
+        target="_blank"
         class="rounded-full p-2 border border-gray-200 hover:border-primary-600 hover:text-primary-600 transition-colors"
       >
         <svg
@@ -111,7 +115,8 @@
         <span class="sr-only">GitHub</span>
       </a>
       <a
-        href="#"
+        href="https://www.linkedin.com/in/tim-schoonewille"
+        target="_blank"
         class="rounded-full p-2 border border-gray-200 hover:border-primary-600 hover:text-primary-600 transition-colors"
       >
         <svg
@@ -135,7 +140,7 @@
         <span class="sr-only">LinkedIn</span>
       </a>
       <button
-        on:click={toggleMobileMenu}
+        onclick={toggleMobileMenu}
         class="md:hidden rounded-full p-2 border border-gray-200"
       >
         <svg
@@ -150,9 +155,18 @@
           stroke-linejoin="round"
           class="h-4 w-4"
         >
-          <path
-            d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"
-          ></path>
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g><g
+            id="SVGRepo_tracerCarrier"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></g><g id="SVGRepo_iconCarrier">
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M4 5C3.44772 5 3 5.44772 3 6C3 6.55228 3.44772 7 4 7H20C20.5523 7 21 6.55228 21 6C21 5.44772 20.5523 5 20 5H4ZM7 12C7 11.4477 7.44772 11 8 11H20C20.5523 11 21 11.4477 21 12C21 12.5523 20.5523 13 20 13H8C7.44772 13 7 12.5523 7 12ZM13 18C13 17.4477 13.4477 17 14 17H20C20.5523 17 21 17.4477 21 18C21 18.5523 20.5523 19 20 19H14C13.4477 19 13 18.5523 13 18Z"
+              fill="#000000"
+            ></path>
+          </g>
         </svg>
         <span class="sr-only">Toggle Menu</span>
       </button>
@@ -166,26 +180,46 @@
     <nav class="flex flex-col gap-4">
       <a
         href="/#about"
+        onclick={() => {
+          mobileMenuOpen = false;
+          goto("/#about");
+        }}
         class="text-sm font-medium py-2 px-4 hover:bg-gray-50 rounded-md mobile-nav-link"
-        >About</a
+        >Over</a
       >
       <a
         href="/#skills"
+        onclick={() => {
+          mobileMenuOpen = false;
+          goto("/#skills");
+        }}
         class="text-sm font-medium py-2 px-4 hover:bg-gray-50 rounded-md mobile-nav-link"
-        >Skills</a
+        >Expertise</a
       >
       <a
         href="/#certifications"
+        onclick={() => {
+          mobileMenuOpen = false;
+          goto("/#certifications");
+        }}
         class="text-sm font-medium py-2 px-4 hover:bg-gray-50 rounded-md mobile-nav-link"
-        >Certifications</a
+        >Certificaten</a
       >
       <a
         href="/#work"
+        onclick={() => {
+          mobileMenuOpen = false;
+          goto("/#work");
+        }}
         class="text-sm font-medium py-2 px-4 hover:bg-gray-50 rounded-md mobile-nav-link"
-        >Work</a
+        >Projecten</a
       >
       <a
         href="/#contact"
+        onclick={() => {
+          mobileMenuOpen = false;
+          goto("/#contact");
+        }}
         class="text-sm font-medium py-2 px-4 hover:bg-gray-50 rounded-md mobile-nav-link"
         >Contact</a
       >
