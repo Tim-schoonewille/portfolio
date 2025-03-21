@@ -22,15 +22,15 @@
         <h2
           class="text-3xl font-bold tracking-tighter sm:text-5xl bg-gradient-text bg-gradient-to-r from-primary-600 via-secondary-500 to-primary-600"
         >
-          Wie Ben Ik
+          Wie ben ik
         </h2>
         <p
-          class="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed"
+          class="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed "
         >
-          Drie jaar geleden begon ik met programmeren, puur uit interesse. Wat
-          begon als een hobby, groeide al snel uit tot een echte passie. Ik dook
-          dieper in verschillende talen en technieken en wist zeker: hier wil ik
-          mijn carrière van maken.
+          Een gedreven fullstack software developer, gespecialiseerd in
+          backend development, die zichzelf de vakkennis eigen heeft gemaakt.
+          Wat begon als een hobby, is inmiddels uitgegroeid tot een echte
+          passie.
         </p>
       </div>
     </div>
@@ -46,23 +46,31 @@
         <ul class="grid gap-6">
           <li>
             <div class="grid gap-1">
-              <h3 class="text-xl font-bold text-primary-700">Achtergrond</h3>
+              <h3 class="text-xl font-bold text-primary-700">
+                Van service naar software
+              </h3>
               <p class="text-gray-500">
-                Wanneer iets me écht interesseert, duik ik er volledig in. Zo
-                heb ik mezelf in korte tijd veel aangeleerd door te
-                experimenteren, problemen op te lossen en steeds een stap verder
-                te gaan. Ik blijf mezelf uitdagen en ontwikkelen, omdat er
-                altijd meer te ontdekken valt.
+                Mijn interesse in computers begon al op jonge leeftijd, zowel in
+                hardware als software. Ik experimenteerde met HTML en PHP, maar
+                koos aanvankelijk voor een carrière in de maatschappelijke zorg.
+                Toch miste ik echte passie en maakte de overstap naar IT. Ik
+                begon bij de service desk en ging op zoek naar wat me echt
+                enthousiast maakte. Al snel kwam ik weer in aanraking met
+                programmeren – en wist ik dat dit is waar mijn hart ligt.
               </p>
             </div>
           </li>
           <li>
             <div class="grid gap-1">
-              <h3 class="text-xl font-bold text-primary-700">Filosofie</h3>
+              <h3 class="text-xl font-bold text-primary-700">
+                Innovatie door Code
+              </h3>
               <p class="text-gray-500">
-                Ik hou van programmeren omdat het me mentaal uitdaagt. Complexe
-                problemen oplossen geeft me energie, en ik vind het geweldig om
-                structuur te brengen in chaos met code.
+                Programmeren fascineert me omdat ik hou van uitdagingen. Elke
+                complexe opdracht voelt als een logische puzzel die ik met
+                plezier oplos. Mijn nieuwsgierigheid en leergierigheid drijven
+                mij vooruit, en in een snel evoluerend technologisch landschap
+                betekent dat constant groeien en vernieuwen.
               </p>
             </div>
           </li>

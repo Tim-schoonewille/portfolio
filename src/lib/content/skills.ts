@@ -3,7 +3,7 @@ import type { SkillCategory } from "$lib/types";
 export const skills: SkillCategory[] = [
   {
     title: "Backend Development",
-    skills: ["Java", "Python", "SpringBoot", "FastAPI", "Typescript"],
+    skills: ["Java", "Python", "SQL", "SpringBoot", "FastAPI", "Typescript"],
   },
 
   {
@@ -18,15 +18,15 @@ export const skills: SkillCategory[] = [
     ],
   },
   {
-    title: "Database",
-    skills: ["PostgreSQL", "MongoDB", "Redis"],
+    title: "Databases",
+    skills: ["PostgreSQL", "MongoDB", "MariaDB", "Redis"],
   },
   {
     title: "DevOps",
-    skills: ["Linux", "Cisco", "Docker", "AWS", "Active Directory", "Git"],
+    skills: ["Linux", "Git", "Cisco", "Docker", "AWS", "Active Directory"],
   },
   {
     title: "Overig",
-    skills: ["RabbitMQ", "Celery", "SQLAlchemy", "Hibernate", "Websockets"],
+    skills: ["AMQP", "Celery", "SQLAlchemy", "Hibernate", "Websockets", "Oauth2"],
   },
 ];

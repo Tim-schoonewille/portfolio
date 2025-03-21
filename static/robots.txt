@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://www.timschoonewille.nl/sitemap.xml

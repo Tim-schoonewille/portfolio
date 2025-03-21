@@ -1,5 +1,5 @@
 import { project_contents } from "$lib/content/project_content.js";
-import { projects } from "$lib/content/projetcs.js";
+import { projects } from "$lib/content/projects.js";
 import { error } from "@sveltejs/kit";
 
 export function load({ params }) {

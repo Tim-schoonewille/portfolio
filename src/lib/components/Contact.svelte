@@ -32,12 +32,12 @@
         <h2
           class="text-3xl font-bold tracking-tighter sm:text-5xl bg-gradient-text bg-gradient-to-r from-primary-600 via-secondary-500 to-primary-600"
         >
-          Kom In Contact
+          Kom in contact
         </h2>
         <p
           class="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed"
         >
-          Meer informatie nodig of simpelweg zin in een babbeltje?
+          Vragen? Stel ze gerust
         </p>
       </div>
     </div>
@@ -60,7 +60,13 @@
             <rect width="20" height="16" x="2" y="4" rx="2"></rect>
             <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
           </svg>
-          <span>tim.schoonewille@gmail.com</span>
+          <span
+            ><a
+              class="hover:text-secondary-600 hover:cursor-pointer hover:underline"
+              href="mailto:tim.schoonewille@gmail.com"
+              target="_blank">tim.schoonewille@gmail.com</a
+            ></span
+          >
         </div>
         <div class="flex items-center gap-2">
           <svg
@@ -81,7 +87,13 @@
             <rect width="4" height="12" x="2" y="9"></rect>
             <circle cx="4" cy="4" r="2"></circle>
           </svg>
-          <span>linkedin.com/in/timschoonewille</span>
+          <span
+            ><a
+              class="hover:text-secondary-600 hover:cursor-pointer hover:underline"
+              href="https://www.linkedin.com/in/timschoonewille"
+              target="_blank">linkedin.com/in/timschoonewille</a
+            ></span
+          >
         </div>
         <div class="flex items-center gap-2">
           <svg
@@ -101,11 +113,17 @@
             ></path>
             <path d="M9 18c-4.51 2-5-2-7-2"></path>
           </svg>
-          <span>github.com/Tim-schoonewille</span>
+          <span
+            ><a
+              class="hover:text-secondary-600 hover:cursor-pointer hover:underline"
+              href="https://www.github.com/Tim-schoonewille"
+              >github.com/Tim-schoonewille</a
+            ></span
+          >
         </div>
         <div class="mt-6">
           <h4 class="text-xl font-bold mb-2 text-primary-700">Locatie</h4>
-          <p>Brunssum, Nederland</p>
+          <p>Parkstad, Nederland</p>
         </div>
       </div>
       <div class="rounded-lg border border-gray-200 bg-white shadow-sm">

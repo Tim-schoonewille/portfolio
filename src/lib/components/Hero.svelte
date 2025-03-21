@@ -30,10 +30,15 @@
           <h1
             class="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl"
           >
-            Hallo, ik ben <span class="text-primary-600 tracking-tighter">Tim Schoonewille</span>
+            Hallo, ik ben <span class="text-primary-600 tracking-tighter"
+              >Tim Schoonewille</span
+            >
           </h1>
           <p class="max-w-[600px] text-gray-500 md:text-xl">
-          Fullstack Software Developer. Gespecialiseerd in Backend Development met Java en Python.
+            <span class="font-bold">Fullstack Software Developer</span>.
+            Gespecialiseerd in Backend Development met
+            <span class="font-bold">Java</span>
+            en <span class="font-bold">Python</span>.
           </p>
         </div>
         <div class="flex flex-col gap-2 min-[400px]:flex-row">
@@ -56,9 +61,10 @@
           class="relative h-[350px] w-[350px] overflow-hidden rounded-full border-4 border-primary-500 shadow-md"
         >
           <img
-            src="/profile1.jpg"
+            src="/profile1_25.jpg"
             alt="Profile"
-            class="absolute inset-0 h-full w-full object-cover "
+            class="absolute inset-0 h-full w-full object-cover"
+            style="object-position: left center;"
           />
         </div>
       </div>

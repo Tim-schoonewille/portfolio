@@ -1,7 +1,7 @@
 <script lang="ts">
   import type { Project } from "$lib/types";
 
-  import { projects } from "$lib/content/projetcs";
+  import { projects } from "$lib/content/projects";
 </script>
 
 <section id="work" class="w-full py-12 md:py-16 lg:py-20 bg-blue-50">

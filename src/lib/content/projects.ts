@@ -61,10 +61,16 @@ export const projects: Project[] = [
     tags: ["Python", "React", "Cache", "Redis"],
     mainImage: "/assessment/main_image.png",
     slug: "assessment",
-    links: [],
+    links: [
+      {
+        name: "Github Repo",
+        url: "https://github.com/Tim-schoonewille/ogd-assessment-backend",
+        icon: "github",
+      },
+    ],
   },
   {
-    title: `"Untitled"`,
+    title: "Untitled",
     subtitle: "Een mobiele web applicatie om films en series bij te houden.",
     description:
       "Een mobiele web applicatie om films en series bij te houden. Ook krijg je informatie over waar deze content te streamen is.",
@@ -85,7 +91,13 @@ export const projects: Project[] = [
 
     mainImage: "/untitled/main_image.jpg",
     slug: "untitled",
-    links: [],
+    links: [
+      {
+        name: "Untitled (web-app)",
+        url: "https://untitled.timschoonewille.nl",
+        icon: "external-link",
+      },
+    ],
   },
   {
     title: "Pingsage",

@@ -73,7 +73,7 @@
               >
                 <path d="M12 2l3 7h7l-6 4 3 7-7-4-7 4 3-7-6-4h7l3-7z"></path>
               </svg>
-              <span class="text-sm">Issued {cert.date}</span>
+              <span class="text-sm">Behaald in {cert.date}</span>
             </div>
           </div>
         </div>
