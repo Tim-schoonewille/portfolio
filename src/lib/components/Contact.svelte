@@ -1,4 +1,6 @@
 <script lang="ts">
+  import { enhance } from "$app/forms";
+
   // Using Svelte 5's runes for form state
   let formData = $state({
     name: "",
@@ -12,22 +14,6 @@
   let isSubmitting = $state(false);
   let formSubmitted = $state(false);
   let formError = $state<string | null>(null);
-
-  const handleSubmit = async (e: any) => {
-    e.preventDefault();
-    isSubmitting = true;
-
-    try {
-      await new Promise((resolve) => setTimeout(resolve, 1000));
-      console.log("Form submitted:", formData);
-      formSubmitted = true;
-      formData = { name: "", email: "", subject: "", message: "" };
-    } catch (error) {
-      formError = "There was an error submitting the form. Please try again.";
-    } finally {
-      isSubmitting = false;
-    }
-  };
 </script>
 
 <section id="contact" class="w-full py-12 md:py-16 lg:py-20">
@@ -128,11 +114,21 @@
 
           {#if formSubmitted}
             <div class="p-4 bg-green-50 text-green-700 rounded-md">
-              Thank you for your message! I'll get back to you soon.
+              Bedankt voor je bericht! Ik zal zo spoedig mogelijk reageren.
             </div>
           {:else}
             <form
-              onsubmit={handleSubmit}
+              method="POST"
+              action="?/sendMail"
+              use:enhance={() => {
+                isSubmitting = true;
+
+                return async ({ update }) => {
+                  await update();
+                  isSubmitting = false;
+                  formSubmitted = true;
+                };
+              }}
               class="space-y-4 relative p-1 rounded-lg bg-gradient-to-r from-primary-400/20 via-secondary-400/20 to-accent-400/20"
             >
               <div class="bg-white rounded-md p-4">
@@ -151,6 +147,7 @@
                     </label>
                     <input
                       id="name"
+                      name="name"
                       bind:value={formData.name}
                       class="flex h-10 w-full rounded-md border border-gray-200 bg-white px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2"
                       required
@@ -163,6 +160,7 @@
                     <input
                       id="email"
                       type="email"
+                      name="email"
                       bind:value={formData.email}
                       class="flex h-10 w-full rounded-md border border-gray-200 bg-white px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2"
                       required
@@ -175,6 +173,7 @@
                   </label>
                   <input
                     id="subject"
+                    name="subject"
                     bind:value={formData.subject}
                     class="flex h-10 w-full rounded-md border border-gray-200 bg-white px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2"
                     required
@@ -186,6 +185,7 @@
                   </label>
                   <textarea
                     id="message"
+                    name="message"
                     bind:value={formData.message}
                     class="flex min-h-[120px] w-full rounded-md border border-gray-200 bg-white px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2"
                     required
