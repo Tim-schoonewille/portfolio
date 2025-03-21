@@ -30,8 +30,7 @@ export const projects: Project[] = [
     ],
 
     tags: ["Python", "Svelte", "FastAPI", "OCR"],
-    mainImage:
-      "https://www.treehugger.com/thmb/PY3JRt8wFzh3NPDx3gjNN9dFROI=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/can-receipts-be-recycled-5072255-02-88708bb6a70f4f34adfbed5939ca8baa.JPG",
+    mainImage: "/mijnbonnetje/main_image.png",
     slug: "mijnbonnetje",
     links: [],
   },
@@ -115,8 +114,7 @@ export const projects: Project[] = [
       { name: "ChartJS", category: "Frontend Library", icon: "palette" },
     ],
     tags: ["Java", "Python", "TypeScript", "MongoDB"],
-    mainImage:
-      "https://engagedly.com/wp-content/uploads/2021/06/need-of-performance-management-software-2021-engagedly.webp",
+    mainImage: "/pingsage/main_image.png",
     slug: "pingsage",
     links: [],
   },
@@ -137,8 +135,7 @@ export const projects: Project[] = [
       { name: "Docker", category: "Container", icon: "dollar-sign" },
     ],
     tags: ["Python", "Docker", "SQLite"],
-    mainImage:
-      "https://imageio.forbes.com/specials-images/imageserve/60f1e792c7e89f933811814c/DevOps-concept/960x0.jpg?format=jpg&width=1440",
+    mainImage: "/cicd_compose/main_image.png",
     slug: "cicd-compose",
     links: [],
   },
