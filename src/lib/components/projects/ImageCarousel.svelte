@@ -11,15 +11,14 @@
 
   let intervalId = $state<any>();
 
-  onMount(() => {
+  $effect(() => {
     intervalId = setInterval(() => {
       nextSlide();
     }, 5000);
-  });
 
-
-  onDestroy(() => {
-    if (intervalId) clearInterval(intervalId);
+    return () => {
+      if (intervalId) clearInterval(intervalId);
+    };
   });
 
   function nextSlide() {
