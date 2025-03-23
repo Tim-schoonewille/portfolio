@@ -5,12 +5,11 @@
     images: string[];
   }
   let { images }: Props = $props();
-  let imgz: string[] = $state([]);
 
   let currentIndex = $state(0);
   let isTransitioning = $state(false);
 
-  let intervalId = $state(0);
+  let intervalId = $state<any>();
 
   onMount(() => {
     intervalId = setInterval(() => {
@@ -18,9 +17,6 @@
     }, 5000);
   });
 
-  $effect(() => {
-    imgz = images;
-  });
 
   onDestroy(() => {
     if (intervalId) clearInterval(intervalId);
@@ -69,11 +65,13 @@
           ? '1'
           : '0'}; z-index: {currentIndex === index ? '10' : '0'};"
       >
-        <img
-          src={image || "/placeholder.svg"}
-          alt={`Project Screenshot ${index + 1}`}
-          class="absolute inset-0 h-full w-full"
-        />
+        <a href={image} target="_blank">
+          <img
+            src={image || "/placeholder.svg"}
+            alt={`Project Screenshot ${index + 1}`}
+            class="absolute inset-0 h-full w-full"
+          />
+        </a>
       </div>
     {/each}
 
