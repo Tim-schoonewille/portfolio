@@ -54,7 +54,7 @@
             >
               <path d="m15 18-6-6 6-6"></path>
             </svg>
-            Back to Projects
+            Terug naar projecten
           </a>
           <div class="space-y-2">
             <!-- <span
