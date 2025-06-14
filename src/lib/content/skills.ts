@@ -3,7 +3,7 @@ import type { SkillCategory } from "$lib/types";
 export const skills: SkillCategory[] = [
   {
     title: "Backend Development",
-    skills: ["Java", "Python", "SQL", "SpringBoot", "FastAPI", "Typescript", "PHP"],
+    skills: ["Java", "Python", "SQL", "SpringBoot", "FastAPI", "Typescript", "PHP", "Laravel"],
   },
 
   {
